@@ -1,8 +1,11 @@
 const Home = () => {
     return (
-        <main>
-            <h1>ciao</h1>
-        </main>
+    <div>
+        <h1 className="titolo">FILM DEL CATALOGO NETFLIX</h1>
+        <div className="Container">
+            
+        </div>
+    </div>
     );
 };
 

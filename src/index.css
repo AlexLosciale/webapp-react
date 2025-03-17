@@ -36,3 +36,15 @@ header{
 .nav-wrapper ul li a:hover{
     color: black;
 }
+
+.Container{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.titolo{
+    text-align: center;
+}
