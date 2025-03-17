@@ -1,11 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
-import Main from "./components/main";
+import Home from "./components/Home";
+import SearchPage from "./components/SerchPage";
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
+      <BrowserRouter> 
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/film" element={<SearchPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
