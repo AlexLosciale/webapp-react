@@ -43,6 +43,7 @@ header{
     text-align: center;
     height: 90vh;
     margin: 0 auto;
+    display: flex;
 }
 
 .titolo{
