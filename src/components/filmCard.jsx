@@ -10,6 +10,7 @@ const FilmCard = ( {film} ) => {
             <h3>{title}</h3>
             <p>{genre}</p>
             <p>{release_year}</p>
+            <Link to={`film/${id}`}>Read More</Link>
         </div>
     );
 };
