@@ -8,9 +8,6 @@ const navbar = () => {
                     <li>
                         <NavLink to="/">Home</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/film">FILM</NavLink>
-                    </li>
                 </ul>
                 <h1>NETFLIX</h1>
             </div>
