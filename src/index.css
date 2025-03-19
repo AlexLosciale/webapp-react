@@ -1,28 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     text-align: center;
     padding: 5px 0;
     background-color: #ff0000;
     position: sticky;
-    top: 0; 
+    top: 0;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px 20px;
     background-color: #ff0000;
     color: white;
-    padding: 5px 5px;
 }
 
-.nav-wrapper ul li{
+.nav-wrapper ul li {
     display: inline;
     margin: 0 10px;
 }
@@ -33,11 +32,11 @@ header{
     font-size: 20px;
 }
 
-.nav-wrapper ul li a:hover{
+.nav-wrapper ul li a:hover {
     color: black;
 }
 
-.titolo{
+.titolo {
     text-align: center;
 }
 
@@ -76,7 +75,7 @@ header{
     color: #555;
 }
 
-.Container a{
+.Container a {
     display: block;
     margin: 5px 10px;
     color: #007bff;
@@ -126,4 +125,48 @@ header{
     color: #222;
 }
 
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.review-form h3 {
+    text-align: center;
+    color: #333;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.review-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.review-form button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.review-form button:hover {
+    background: #0056b3;
+}

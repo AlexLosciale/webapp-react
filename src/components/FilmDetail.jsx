@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import ReviewForm from "./ReviewForm";
 
 const FilmDetail = () => {
     const { id } = useParams();
@@ -11,6 +12,13 @@ const FilmDetail = () => {
             .then(data => setFilm(data))
             .catch(err => console.error("Errore nel recupero del film:", err));
     }, [id]);
+
+    const handleNewReview = (newReview) => {
+        setFilm((prevFilm) => ({
+            ...prevFilm,
+            reviews: [...prevFilm.reviews, newReview],
+        }));
+    };
 
     if (!film) return <p>Caricamento...</p>;
 
@@ -37,6 +45,7 @@ const FilmDetail = () => {
             ) : (
                 <p>Ancora nessuna recensione per questo film.</p>
             )}
+            <ReviewForm movieId={id} onNewReview={handleNewReview} />
         </div>
     );
 };
