@@ -10,7 +10,7 @@ const ReviewForm = ({ movieId, onNewReview }) => {
 
         const review = { movie_id: movieId, name, vote, text };
 
-        const response = await fetch("http://localhost:3000/movies/reviews", {
+        const response = await fetch("http://localhost:3000/reviews", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(review),

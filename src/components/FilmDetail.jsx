@@ -12,7 +12,7 @@ const FilmDetail = () => {
             .then(data => setFilm(data))
             .catch(err => console.error("Errore nel recupero del film:", err));
     }, [id]);
-
+    
     const handleNewReview = (newReview) => {
         setFilm((prevFilm) => ({
             ...prevFilm,
